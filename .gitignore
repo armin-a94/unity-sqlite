@@ -70,3 +70,20 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.Client.iml
+.idea/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Default ignored files
+/shelf/
+/workspace.xml
