@@ -31,7 +31,11 @@ public class SQLiteManager : MonoBehaviour
         if (_initialized) { return; }
         DontDestroyOnLoad(gameObject);
         SQLiteConnectionPool.Shared.Reset();
+        #if UNITY_EDITOR
         _directory = Path.Combine(Application.persistentDataPath, "Database");
+        #else
+        _directory = Path.Combine(Application.dataPath, "Database");
+        #endif
         _initialized = true;
     }
 
